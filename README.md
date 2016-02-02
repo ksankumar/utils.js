@@ -137,7 +137,7 @@ This method returns a boolean, Checks whether a value is percentage
 
 ## Utils.isNull
 ```js
-Utils.isNull(null);
+Utils.isNull(null); //true
 ```
 This method returns a boolean, Checks whether a value is null
 
@@ -253,7 +253,7 @@ This method returns a filtered object which is matched string
 
 ## Utils.sort
 ```js
-Utils.sort([{'a':'foo','b':'bar'},{'a':'gama','b':'beta'}], 'a', false);
+Utils.sort([{'a':'foo','b':'bar'},{'a':'gama','b':'beta'}], 'a', false); //[{'a':'gama','b':'beta'},{'a':'foo','b':'bar'}]
 ```
 This method returns sort object which is based on key and order(Asc/Des)
 
