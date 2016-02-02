@@ -155,17 +155,30 @@ Utils.isUndefined(a); //true
 This method returns a boolean, Checks whether a value is unDefined
 
 
-## Utils.getTime
+## Utils.getTimeStamp
 ```js
-Utils.getTime(); //1454433989971
+Utils.getTimeStamp(); //1454433989971
 ```
 This method returns the timestamp according to local time
+
+## Utils.isValidDate
+```js
+Utils.isValidDate("02/02/2016"); //true
+```
+This method returns the Boolean if date is valid or invalid
+
 
 ## Utils.getDate
 ```js
 Utils.getDate(); //Tue Feb 02 2016 12:25:58 GMT-0500 (EST)
 ```
 This method returns the current date with time according to local time
+
+## Utils.getTime
+```js
+Utils.getTime(12); //9:53 PM
+```
+This method returns the Time bases on date and formate(12/24 hrs)
 
 
 ## Utils.getMonth
