@@ -1,0 +1,9 @@
+{
+    "name": "Utils-js",
+    "version": "v1.0.1",
+    "main": "./utils.js",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ]
+}

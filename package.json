@@ -1,0 +1,21 @@
+{
+    "name": "Utils-js",
+    "version": "v1.0.1",
+    "description": "Common js functions all in one library",
+    "main": "utils.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ksankumar/utils.git"
+    },
+    "keywords": [
+        "library",
+        "utility",
+        "framework",
+        "common"
+    ],
+    "author": "santhosh Kumar,Krishnan <ksankumar@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ksankumar/utils/issues"
+    }
+}
