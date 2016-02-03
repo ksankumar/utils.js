@@ -32,7 +32,7 @@
         month: 'January,February,March,April,May,June,July,August,September,October,November,December'.split(','),
         /**
          * Check function or not
-         * @param {function} a 
+         * @param {function} a
          * @return {Boolean} true/false
          **/
         isFunction: function(a) {
@@ -40,7 +40,7 @@
         },
         /**
          * Check Object or not
-         * @param {object} a 
+         * @param {object} a
          * @return {Boolean} true/false
          **/
         isObject: function(a) {
@@ -48,7 +48,7 @@
         },
         /**
          * Check String or not
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isString: function(a) {
@@ -56,7 +56,7 @@
         },
         /**
          * Check boolean or not
-         * @param {Booleab} a 
+         * @param {Booleab} a
          * @return {Boolean} true/false
          **/
         isBoolean: function(a) {
@@ -64,7 +64,7 @@
         },
         /**
          * Check Number or not
-         * @param {Number} a 
+         * @param {Number} a
          * @return {Boolean} true/false
          **/
         isNumber: function(a) {
@@ -72,7 +72,7 @@
         },
         /**
          * Check String is empty or not
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isEmptyString: function(a) {
@@ -80,7 +80,7 @@
         },
         /**
          * Check String is not empty
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isNotEmptyString: function(a) {
@@ -88,7 +88,7 @@
         },
         /**
          * Remove a extra spaces in string end/start
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         trim: function(a) {
@@ -96,7 +96,7 @@
         },
         /**
          * Check Array or not
-         * @param {Array} a 
+         * @param {Array} a
          * @return {Boolean} true/false
          **/
         isArray: function(a) {
@@ -104,7 +104,7 @@
         },
         /**
          * Check Array is empty or not
-         * @param {Array} a 
+         * @param {Array} a
          * @return {Boolean} true/false
          **/
         isEmptyArray: function(a) {
@@ -112,7 +112,7 @@
         },
         /**
          * Check Array is not empty or not
-         * @param {Array} a 
+         * @param {Array} a
          * @return {Boolean} true/false
          **/
         isNotEmptyArray: function(a) {
@@ -120,7 +120,7 @@
         },
         /**
          * Check Error or not
-         * @param {Error Object} a 
+         * @param {Error Object} a
          * @return {Boolean} true/false
          **/
         isError: function(a) {
@@ -128,7 +128,7 @@
         },
         /**
          * Check 2 values are equal or not
-         * @param {Number} a 
+         * @param {Number} a
          * @param {Number} b
          * @return {Boolean} true/false
          **/
@@ -137,7 +137,7 @@
         },
         /**
          * Check 2 values are equal or not
-         * @param {Number} a 
+         * @param {Number} a
          * @param {Number} b
          * @return {Boolean} true/false
          **/
@@ -146,7 +146,7 @@
         },
         /**
          * Check 2 values are isGreater or not
-         * @param {Number} a 
+         * @param {Number} a
          * @param {Number} b
          * @return {Boolean} true/false
          **/
@@ -155,7 +155,7 @@
         },
         /**
          * Check 2 values are isLessThan or not
-         * @param {Number} a 
+         * @param {Number} a
          * @param {Number} b
          * @return {Boolean} true/false
          **/
@@ -180,7 +180,7 @@
         },
         /**
          * Check percentage or not
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isPercentage: function(a) {
@@ -188,7 +188,7 @@
         },
         /**
          * Check Null or not
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isNull: function(a) {
@@ -196,7 +196,7 @@
         },
         /**
          * Check values as defined or not
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isDefined: function(a) {
@@ -204,7 +204,7 @@
         },
         /**
          * Check values as unDefined or not
-         * @param {String} a 
+         * @param {String} a
          * @return {Boolean} true/false
          **/
         isUndefined: function(a) {
@@ -236,7 +236,7 @@
         },
         /**
          * get a current timeStamp
-         * @param {Date} a 
+         * @param {Date} a
          * @return {Boolean} true/false
          **/
         getTimeStamp: function(a) {
@@ -251,12 +251,8 @@
                 if (date === 12 || date === 24) {
                     formate = date;
                     date = '';
-                } else if (this.isValidDate(date)) {
-                    date = date;
-                    formate = formate;
-                } else {
+                } else if (!this.isValidDate(date)) {
                     date = this.getDate();
-                    formate = formate;
                 }
             }
             formate = (formate === 12 || formate === 24) ? formate : 24;
@@ -325,7 +321,7 @@
         },
         /**
          * Check isEmpty Object/Array or not
-         * @param {Array/Object} a 
+         * @param {Array/Object} a
          * @return {Boolean} true/false
          **/
         isEmpty: function(a) {
@@ -339,7 +335,7 @@
         },
         /**
          * Check isNotEmpty Object/Array or not
-         * @param {Array/Object} a 
+         * @param {Array/Object} a
          * @return {Boolean} true/false
          **/
         isNotEmpty: function(a) {
@@ -347,7 +343,7 @@
         },
         /**
          * Check Object has property or not
-         * @param {Object} a 
+         * @param {Object} a
          * @param {String}  property
          * @return {Boolean} true/false
          **/
@@ -356,7 +352,7 @@
         },
         /**
          * convert string to CamelCase
-         * @param {String} a 
+         * @param {String} a
          * @return {String} cameCase
          **/
         toCamelCase: function(a, regex) {
@@ -368,7 +364,7 @@
         },
         /**
          * Convert object to string
-         * @param {Object} a 
+         * @param {Object} a
          * @return {String} Converted string
          **/
         stringify: function(a) {
@@ -376,7 +372,7 @@
         },
         /**
          * Reverse a string
-         * @param {String} str 
+         * @param {String} str
          * @return {String}
          **/
         reverse: function(str) {
@@ -392,10 +388,10 @@
         },
         /**
          * Filtered object with specific string
-         * @param {Object} data 
+         * @param {Object} data
          * @param {String} text
          * @param {String} searchBy
-         * @param {function} callback 
+         * @param {function} callback
          * @return {Object} filtered object
          **/
         search: function(data, text, searchBy, callback) {
@@ -422,10 +418,10 @@
         },
         /**
          * Sort object with order by - Assending/Decending
-         * @param {Object} data 
+         * @param {Object} data
          * @param {String} key
          * @param {String} orderBy
-         * @param {function} callback 
+         * @param {function} callback
          * @return {Object} sorted object
          **/
         sort: function(data, key, orderBy, callback) {
@@ -442,7 +438,7 @@
         },
         /**
          * get a unique array
-         * @param {Array} a 
+         * @param {Array} a
          * @return {Array} unique array values
          **/
         unique: function(ary) {
