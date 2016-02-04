@@ -15,7 +15,7 @@ $ npm i -g gulp
 $ git clone https://github.com/ksankumar/utils
 ```
 ```html
-<script type="text/javascript" src="Utils.js"></script>
+<script type="text/javascript" src="src/Utils.js"></script>
 ```
 
 ## Utils API
