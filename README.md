@@ -12,7 +12,7 @@ You need Gulp installed globally:
 $ npm i -g gulp
 ```
 ```sh
-$ git clone [git-repo-url] utils
+$ git clone https://github.com/ksankumar/utils
 ```
 ```html
 <script type="text/javascript" src="Utils.js"></script>
